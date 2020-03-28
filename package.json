@@ -2,15 +2,15 @@
   "name": "ts-node-template",
   "version": "1.0.0",
   "main": "index.js",
-	"author": "Alek Tobias <alektobias@gmail.com>",
-	"repository": {
-		"type": "git",
-		"url": "github.com/alektobias/ts-node-template"
-	},
+  "author": "Alek Tobias <alektobias@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alektobias/ts-node-template"
+  },
   "license": "MIT",
   "scripts": {
-		"dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
-		"release": "semantic-release --no-ci",
+    "dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
+    "release": "GITHUB_TOKEN=4ba4151f793477db875a9d99221423ddad697eb4 semantic-release --no-ci",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "devDependencies": {
