@@ -12,7 +12,8 @@
     "dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
     "release": "GITHUB_TOKEN=4ba4151f793477db875a9d99221423ddad697eb4 semantic-release --no-ci",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
@@ -26,10 +27,13 @@
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
     "jest": "^25.2.3",
     "lint-staged": "^10.0.9",
