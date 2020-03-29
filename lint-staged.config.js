@@ -1,4 +1,3 @@
 module.exports = {
-	'*.ts': ['npm run lint', 'git add'],
-	'*.js': ['npm run lint', 'git add'],
+	'*.ts': ['npm run test', 'npm run lint', 'git add'],
 };
