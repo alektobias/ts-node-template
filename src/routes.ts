@@ -1,9 +1,8 @@
 import { Router } from 'express';
+import ExampleController from './app/controllers/ExampleController';
 
 const routes = Router();
 
-routes.route('/').get((req, res) => {
-	return res.json({ msg: 'ok' });
-});
+routes.route('/').get(ExampleController.index);
 
 export default routes;
