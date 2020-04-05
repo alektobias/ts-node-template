@@ -1,3 +1,3 @@
 module.exports = {
-	'*.ts': ['npm run test', 'npm run lint', 'git add'],
+	'*.ts': ['yarn test', 'yarn lint', 'git add'],
 };
