@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "start": "nodemon src/server.ts",
-    "release": "semantic-release --no-ci",
+    "release": "GITHUB_TOKEN=f1dc5329626524f89de19170444f1bce176cebff semantic-release --no-ci",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest",
     "test:watch": "jest --watch"
